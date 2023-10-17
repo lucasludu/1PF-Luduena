@@ -11,10 +11,13 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatSelectModule } from '@angular/material/select';
 import { MatTableModule } from '@angular/material/table';
 import { MatIconModule } from '@angular/material/icon';
+import { FullnamePipe } from './pipes/fullname.pipe';
+import { MatRadioModule } from '@angular/material/radio';
+import { ButtonSizeDirective } from './directives/button-size.directive';
 
 
 @NgModule({
-  declarations: [FormErrorsPipe],
+  declarations: [FormErrorsPipe, FullnamePipe, ButtonSizeDirective],
   imports: [CommonModule],
   exports: [
     MatButtonModule,
@@ -26,7 +29,10 @@ import { MatIconModule } from '@angular/material/icon';
     MatDialogModule,
     MatSelectModule,
     FormErrorsPipe,
-    MatTableModule
+    FullnamePipe,
+    MatTableModule,
+    MatRadioModule,
+    ButtonSizeDirective
   ],
 })
 export class SharedModule { }

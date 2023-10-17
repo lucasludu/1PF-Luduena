@@ -12,5 +12,6 @@ export class Student {
         this.lastname = lastname;
         this.age = age;
         this.email = email;
+
     }
 }

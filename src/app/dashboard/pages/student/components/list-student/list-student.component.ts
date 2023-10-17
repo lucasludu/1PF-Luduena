@@ -20,6 +20,6 @@ export class ListStudentComponent {
   editStudent = new EventEmitter<Student>();
 
 
-  displayedColumns = ['id', 'name', 'lastname', 'age', 'email', 'actions'];
+  displayedColumns = ['id', 'fullname', 'age', 'email', 'actions'];
 
 }
